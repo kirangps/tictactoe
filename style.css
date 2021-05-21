@@ -1,0 +1,76 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.game--title, .game--status{
+   text-align: center;
+
+}
+
+.game--status{
+    color: grey;
+}
+
+.game--board{
+    height: 350px;
+    width:350px;
+    background-image: url('background.png');
+    margin:auto;
+}
+
+.game--container{
+    display:grid;
+    grid-template-columns: repeat(3, auto);
+    width: 306px;
+    padding-left:20px;
+    padding-top: 25px;
+}
+
+.cell{
+    width:100px;
+    height: 100px;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    font-size: 50px;
+    font-family: "Permanent Marker",  cursive;
+}
+
+
+.cell:hover{
+    background:turquoise;
+    opacity: 0.4;
+}
+
+
+.sq0, .sq1, .sq6, .sq7{
+    border-right: 3px solid white;
+}
+
+.sq3, .sq4{
+    border-top: 3px solid white;
+    border-right: 3px solid white;
+    border-bottom:3px solid white;
+}
+
+.sq5{
+    border-top: 3px solid white;
+    border-bottom:3px solid white;
+}
+
+.game--restart{
+    font-weight: 400;
+    line-height: 1;
+    font-size: 15px;
+    color: white;
+    background-color: deepskyblue;
+    border-color: white;
+    border: 1px solid transparent;
+    border-radius: 0.2rem;
+    padding:0.45rem 1.5rem;
+}
+
+.btn--wrapper{
+    text-align: center;
+}
